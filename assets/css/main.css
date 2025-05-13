@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --ui-container: 1920px;
+}
+
+/* Глобальные стили для цветовых режимов */
+.light [class*="border"] {
+  border-color: var(--tw-ring-color);
+}
+
+.dark [class*="border"] {
+  border-color: var(--tw-ring-color);
+}
+
+.sepia [class*="border"] {
+  border-color: var(--tw-ring-color);
+}
+
+.navigation-collapsed .group {
+  @apply justify-center;
+  margin: 0;
+}
+
+.navigation-collapsed .group .iconify {
+  @apply size-6 text-xl mx-auto;
+}
